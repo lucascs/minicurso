@@ -49,9 +49,15 @@
 			</ul>
 		</div>
 	</c:if>
-	<c:if test="${not empty notice}">
+	
+	
+	
+	
+	
+	
+	<c:if test="${not empty mensagem}">
 		<div id="notice">
-			<p>${notice }</p>
+			<p>${mensagem }</p>
 		</div>
 	</c:if>
 	<div id="contentWrap">

@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import org.hibernate.validator.NotEmpty;
+
 @Entity
 public class Professor {
 
@@ -15,7 +17,10 @@ public class Professor {
 
 	private String nome;
 	private String email;
+
+	@NotEmpty
 	private String senha;
+
 	private String materias;
 
 	private BigDecimal salario;
